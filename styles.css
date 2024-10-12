@@ -15,11 +15,13 @@
         header {
             background-color: #333;
             color: #fff;
-            margin: 0;
+            margin: 0; /* переконайтеся, що тут стоїть 0 */
             padding: 1em;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-bottom: 1px solid #fff;
+            width: 100%; /* додати це */
+            box-sizing: border-box; /* додати це для включення padding у ширину */
         }
         nav ul {
             list-style: none;
