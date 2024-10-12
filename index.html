@@ -27,15 +27,21 @@
         nav {
             background-color: #444;
             overflow: hidden;
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 20px;
         }
         nav a {
-            float: left;
+            float: none;
             display: block;
             color: #fff;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #555;
         }
         nav a:hover {
             background-color: #ddd;
@@ -67,15 +73,23 @@
             bottom: 0;
             width: 100%;
         }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
         @media (max-width: 768px) {
             header {
                 position: static;
             }
-            nav a {
-                float: none;
+            nav {
                 display: block;
-                text-align: left;
-                padding: 10px;
+            }
+            .hamburger {
+                display: block;
             }
         }
     </style>
@@ -83,6 +97,7 @@
 <body>
     <header>
         <h1>Пральня</h1>
+        <span class="hamburger">&#9776;</span>
     </header>
     <nav>
         <a href="#about">Про пральню</a>
@@ -112,5 +127,13 @@
     <footer>
         <p>© 2023 Пральня</p>
     </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>
