@@ -86,18 +86,16 @@
             margin-bottom: 10px;
         }
         .email {
-            background-color: #007bff; /* синє тло для кнопок email */
-            color: #fff; /* білий текст */
-            padding: 10px 15px; /* додаємо внутрішні відступи */
-            border-radius: 5px; /* закруглюємо кути */
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-        }
-        .email:hover {
-            background-color: #0056b3; /* темніший синій при наведенні */
-            color: #fff;
-            transform: scale(1.1);
-        }
+    background-color: #007bff; /* синє тло для кнопок email */
+    color: #fff; /* білий текст */
+    padding: 10px 15px; /* внутрішні відступи */
+    border-radius: 5px; /* закруглені кути */
+    text-decoration: none;
+    border: 2px solid #0056b3; /* межа навколо кнопки */
+}
+.email:active {
+    background-color: #0056b3; /* темніший синій при натисканні */
+    border: 2px solid #003f7f; /* темніша межа при натисканні */
         footer {
             background-color: #333;
             color: #fff;
