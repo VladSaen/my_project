@@ -18,7 +18,7 @@
         p {
             font-size: 16px;
             text-align: center;
-            line-height: 1.5; /* відступи між рядками */
+            line-height: 1.5;
         }
         header {
             background-color: #333;
@@ -31,26 +31,15 @@
             width: 100%;
             box-sizing: border-box;
         }
-        nav ul {
-            list-style: none;
+        .company-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around; /* відцентровані пункти навігації */
-            height: 40px; /* зменшення висоти навігації */
-            align-items: center; /* вирівнювання по центру вертикально */
-        }
-        nav li {
-            margin-right: 10px;
-        }
-        nav a {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
             color: #fff;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-        }
-        nav a:hover {
-            transform: scale(1.1);
-            color: #007bff;
+            border-radius: 10px;
         }
         main {
             display: flex;
@@ -62,7 +51,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         section {
-            background-color: rgba(247, 247, 247, 0.8); /* прозорий фон */
+            background-color: rgba(247, 247, 247, 0.8);
             padding: 1em;
             margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -73,7 +62,7 @@
         h1 {
             font-size: 24px;
             margin-bottom: 10px;
-            text-align: center; /* центровані заголовки */
+            text-align: center;
         }
         ul {
             list-style: none;
@@ -84,16 +73,20 @@
             margin-bottom: 10px;
         }
         .email {
-            background-color: #007bff; /* синій фон для кнопок email */
-            color: #fff; /* білий текст */
-            padding: 10px 15px; /* внутрішні відступи */
-            border-radius: 5px; /* закруглені кути */
+            color: #fff;
             text-decoration: none;
-            border: 2px solid #0056b3; /* межа */
+            transition: all 0.3s ease-in-out;
+            display: block;
+            padding: 10px;
+            background-color: #007bff;
+            border-radius: 5px;
+            border: 2px solid #0056b3;
+            margin: 10px 0;
+            text-align: center;
         }
         .email:active {
-            background-color: #0056b3; /* темний синій при натисканні */
-            border: 2px solid #003f7f; /* темніша межа при натисканні */
+            background-color: #0056b3;
+            border: 2px solid #003f7f;
         }
         footer {
             background-color: #333;
@@ -102,17 +95,31 @@
             text-align: center;
             border-top: 1px solid #fff;
         }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 1em;
+                border: none;
+                box-shadow: none;
+            }
+            section {
+                margin-bottom: 10px;
+                padding: 0.5em;
+                box-shadow: none;
+            }
+            .email {
+                padding: 8px 12px;
+                margin-bottom: 10px;
+            }
+            #contact {
+                min-height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#services">Служби</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-        </nav>
+        <div class="company-title">FreshWash - Високоякісна пральна служба</div>
     </header>
     <main>
         <section id="about">
@@ -135,8 +142,10 @@
         </section>
         <section id="contact">
             <h1>Контакти</h1>
-            <a class="email" href="mailto:qwefghjklgfd@gmail.com">Наша пошта для детальної інформації</a>
-            <a class="email" href="https://forms.gle/SCohjqGyqmBZ2xXx6">Замовити послугу</a>
+            <div class="email-container">
+                <a class="email" href="mailto:qwefghjklgfd@gmail.com">Наша пошта для детальної інформації</a>
+                <a class="email" href="https://forms.gle/SCohjqGyqmBZ2xXx6">Замовити послугу</a>
+            </div>
         </section>
     </main>
     <footer>
