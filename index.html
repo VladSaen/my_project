@@ -3,137 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пральня</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        nav {
-            background-color: #444;
-            overflow: hidden;
-            display: none;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 20px;
-        }
-        nav a {
-            float: none;
-            display: block;
-            color: #fff;
-            text-align: left;
-            padding: 10px;
-            border-bottom: 1px solid #555;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .content {
-            padding: 60px 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        section h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        section ul {
-            list-style: none;
-            padding: 0;
-        }
-        section ul li {
-            margin-bottom: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 24px;
-        }
-        @media (max-width: 768px) {
-            header {
-                position: static;
-            }
-            nav {
-                display: block;
-            }
-            .hamburger {
-                display: block;
-            }
-        }
-    </style>
+    <title>FreshWash - Високоякісна пральна служба</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Пральня</h1>
-        <span class="hamburger">&#9776;</span>
+        <nav>
+            <ul>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#services">Служби</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#about">Про пральню</a>
-        <a href="#services">Послуги</a>
-        <a href="#contacts">Контакти</a>
-    </nav>
-    <div class="content">
+    <main>
         <section id="about">
-            <h2>Про пральню</h2>
-            <p>Короткий опис вашої пральні.</p>
+            <h1>Про нас</h1>
+            <p>Високоякісна пральна служба! Наша команда працює над забезпеченням вам найкращого досвіду у чищенні та догляді за одягом. Наш швидкісний сервіс поверне до вас одяг протягом 1-2 днів, з доставкою до камери.</p>
+            <img src="image.jpg" alt="Наша команда">
         </section>
         <section id="services">
-            <h2>Послуги</h2>
+            <h1>Умови і ціни</h1>
             <ul>
-                <li>Стирка</li>
-                <li>Хімічна чистка</li>
-                <li>Ухажування за шкіряними та шовними виробами</li>
+                <li>Приготуйте пакет з номером камери</li>
+                <li>Перевіряйте кармани на стороні предмети</li>
+                <li>Вага пакета не більше 6 кілограмів</li>
+                <li>До пакету покладіть миючий засіб (пророк, рідкий порошок, капсула і т.д.)</li>
+                <li>Послуга прання коштує пачка цигарок, якщо миючого засобу нема то ціна пачка хороших ліцензійних цигарок</li>
             </ul>
         </section>
-        <section id="contacts">
-            <h2>Контакти</h2>
-            <p>Адреса: your_address</p>
-            <p>Телефон: your_phone</p>
-            <p>Email: your_email</p>
+        <section id="contact">
+            <h1>Контакти</h1>
+            <p><a href="mailto:qwefghjklgfd@gmail.com" class="email">Наша пошта для детальної інформації</a></p>
+            <p><a href="https://forms.gle/SCohjqGyqmBZ2xXx6" class="email">Замовити послугу</a></p>
         </section>
-    </div>
-    <footer>
-        <p>© 2023 Пральня</p>
-    </footer>
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const nav = document.querySelector('nav');
-
-        hamburger.addEventListener('click', () => {
-            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-        });
-    </script>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
