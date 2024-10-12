@@ -31,23 +31,25 @@
             width: 100%;
             height: 60%;
             box-sizing: border-box;
-        }
-        nav ul {
+          }
+          nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: space-around; /* щоб слова були відцентровані */
-        }
-        nav li {
-            margin-right: 10px; /* зменшити відстань між пунктами навігації */
-        }
-        nav a {
+            justify-content: space-around;
+            height: 40px; /* зменшуємо висоту навігації */
+            align-items: center; /* вирівнюємо по центру вертикально */
+         }
+         nav li {
+            margin-right: 10px;
+         }
+         nav a {
             color: #fff;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
         }
-        nav a:hover {
+            nav a:hover {
             transform: scale(1.1);
             color: #007bff;
         }
@@ -84,12 +86,17 @@
             margin-bottom: 10px;
         }
         .email {
-            color: #007bff;
+            background-color: #007bff; /* синє тло для кнопок email */
+            color: #fff; /* білий текст */
+            padding: 10px 15px; /* додаємо внутрішні відступи */
+            border-radius: 5px; /* закруглюємо кути */
             text-decoration: none;
             transition: all 0.3s ease-in-out;
         }
         .email:hover {
-            color: #0069d9;
+            background-color: #0056b3; /* темніший синій при наведенні */
+            color: #fff;
+            transform: scale(1.1);
         }
         footer {
             background-color: #333;
