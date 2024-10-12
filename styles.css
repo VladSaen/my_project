@@ -1,11 +1,15 @@
 <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
             margin: 0;
             padding: 0;
-            background-image: url("https://www.freepik.com/free-photo/front-view-male-housekeeper-smelling-red-towel-standing-near-washing-machine-white-wall_17181062.htm#query=washing%20machine&position=16&from_view=keyword&track=ais_hybrid-rr-similar&uuid=257a6f57-dea4-445e-a036-1aef3065d5fa");
+            background-image: url("img.jpg");
             background-size: cover;
             background-position: center;
+        }
+        p {
+            font-size: 8px;
         }
         header {
             background-color: #333;
