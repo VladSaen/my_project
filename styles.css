@@ -1,7 +1,7 @@
 <style>
         body {
             font-family: 'Roboto', sans-serif;
-            font-size: 12px;
+            font-size: 8px;
             margin: 0;
             padding: 0;
             background-image: url("img.jpg");
@@ -9,7 +9,7 @@
             background-position: center;
         }
         p {
-            font-size: 8px;
+            font-size: 12px;
             text-align: center;
         }
         header {
