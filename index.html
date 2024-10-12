@@ -5,6 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshWash - Високоякісна пральна служба</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            background-image: url("img.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        p {
+            font-size: 16px;
+            text-align: center;
+            line-height: 1.5; /* відступи між рядками */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #fff;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around; /* щоб слова були відцентровані */
+        }
+        nav li {
+            margin-right: 10px; /* зменшити відстань між пунктами навігації */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+            color: #007bff;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            background-color: #f7f7f7;
+            padding: 1em;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center; /* центрировать заголовки */
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .email {
+            color: #007bff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .email:hover {
+            color: #0069d9;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            border-top: 1px solid #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,8 +140,17 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 FreshWash. Всі права захищені.</p>
+        <p>&copy; 2024 FreshWash. Всі права захищені.</p>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        const emailLink = document.querySelector('a.email');
+        emailLink.addEventListener('click', event => {
+            event.preventDefault();
+            mailto('qwefghjklgfd@gmail.com');
+        });
+        function mailto(address) {
+            window.location.href = `mailto:${address}`;
+        }
+    </script>
 </body>
 </html>
