@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Послуги Прання</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #007BFF;
+        }
+        .box {
+            margin: 20px 0;
+            padding: 20px;
+            background: #e0e0e0;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .box:hover {
+            background: #d4d4d4;
+        }
+        .box h2 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+        .box p {
+            line-height: 1.6;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            .box {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>My project</h1>
+    <div class="container">
+        <header>
+            <h1>Послуги Прання</h1>
+        </header>
+        <div class="box">
+            <h2>Про нас</h2>
+            <p>Тут буде текст про вашу компанію.</p>
+        </div>
+        <div class="box">
+            <h2>Наші послуги</h2>
+            <p>Тут буде опис послуг, які ви надаєте.</p>
+        </div>
+        <div class="box">
+            <h2>Контакти</h2>
+            <p>Тут буде контактна інформація.</p>
+        </div>
+    </div>
 </body>
 </html>
